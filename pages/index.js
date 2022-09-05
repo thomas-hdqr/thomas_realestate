@@ -22,7 +22,6 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
   console.log(propertiesForSale, propertiesForRent)
   return (
     <Box>
-      <h1>Hello World</h1>
       <Banner 
         purpose="RENT A HOME"
         title1="Rental Homes for"
@@ -36,8 +35,6 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
         <Flex flexWrap="wrap">
           {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
         </Flex>
-      
-
       <Banner 
         purpose="BUY A HOME"
         title1="Find, Buy & Own Your"
